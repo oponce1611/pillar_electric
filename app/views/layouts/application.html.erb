@@ -10,6 +10,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+
+      <%= link_to root_path do
+        image_tag "PILLAR_ELECTRIC_BANNER.svg", class:'mx-auto d-block', width: "600"
+      end %>
+      <%= yield %>
+    </div>
   </body>
 </html>
