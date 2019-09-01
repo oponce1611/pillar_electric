@@ -82,4 +82,4 @@ production:
   <<: *default
   database: pillar_electric_production
   username: pillar_electric
-  password: <%= ENV['PILLAR_ELECTRIC_DATABASE_PASSWORD'] %>
+  password: <%= Rails.application.credentials.database_password %>
